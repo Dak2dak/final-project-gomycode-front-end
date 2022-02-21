@@ -1,11 +1,14 @@
 import React from 'react';
-import Card from "./Card";
+// import Card from "./Card";
+import SideBar from './SideBar';
+
 
 const Home = () => {
 
     return (
         <div>
-            <Card />
+            {/* <Card /> */}
+            <SideBar />
         </div>
     )
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollingText from './ScrollingText';
 
 
 const NavBar = () => {
@@ -7,7 +8,7 @@ const NavBar = () => {
         <div>
             <header>
                 <div className="top">
-                    <p>THE BEST ONLINE SHOPPING WEBSITE OF IVORY COAST</p>
+                    <ScrollingText />
                 </div>
                 <nav>
                     <div className="nav-left">
