@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    bottom: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-white: #fff;
+    --color-warning: #ffbb55;
+    --color-primary-variant: #111e88;
+    --border-radius-card: 1rem;
+    --border-radius-btn: .5rem;
+    --flex-gap-1: .8rem;
+    --padding-3: .5rem;
+    --margin-6: .2rem;
+}
+
+.container-2 {
+    margin: 0 auto;
+    width: 200px;
+    height: 230px;
+    border: 1px solid #ccc;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--border-radius-card);
+}
+
+.container-2 img {
+    width: 100%;
+    border-top-right-radius: var(--border-radius-card);
+    border-top-left-radius: var(--border-radius-card);
+}
+
+.container-2 .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--flex-gap-1);
+}
+
+.card-down .price-box {
+    text-align: center;
+    font-weight: 600;
+    color: var(--color-warning);
+    margin-bottom: var(--margin-6);
+}
+
+.btn .search-btn {
+    background-color: var(--color-primary-variant);
+    color: var(--color-white);
+    border-radius: var(--border-radius-btn);
+    padding: var( --padding-3);
+}
+
+.btn .cart-btn {
+    background-color: var(--color-primary-variant);
+    padding: var(--padding-3);
+    color: var(--color-white);
+    border-radius: var(--border-radius-btn);
+}
