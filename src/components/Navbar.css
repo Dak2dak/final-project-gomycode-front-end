@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Permanent+Marker&display=swap');
+
 
 *{
     margin: 0;
@@ -16,6 +18,7 @@
     --color-info-dark: #7d8da1;
     --color-info-light: #dce1eb;
     --color-dark: #363949;
+    --color-nav: #FCA705;
     --color-light: rgb(132, 139, 200, 0.18);
     --color-primary-variant: #111e88;
     --color-dark-variant: #677483;
@@ -48,20 +51,9 @@
 
 /* =========================== START NAVBAR ============================== */
 
-/* header .top p {
-    background-color: var(--color-primary);
-    font-size: var(--font-scrolling-text);
-    padding: var(--padding-3);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 600;
-    height: 70px;
-} */
-
 header .top {
     height: 70px;
-    background-color: var(--color-primary);
+    background-color: var(--color-nav);
     font-size: var(--font-scrolling-text);
 }
 
@@ -168,7 +160,7 @@ nav .nav-right {
     width: 30%;
 }
 
-nav .nav-right a {
+nav .nav-right button {
     background-color: var(--color-white);
     border: 1px solid var(--color-info-dark);
     text-decoration: none;
@@ -177,7 +169,21 @@ nav .nav-right a {
     border-radius: var(--border-radius-1);
 }
 
-nav .nav-right a:hover {
+nav .nav-right button:hover {
     background-color: var(--color-primary-variant);
     color: var(--color-white);
 }
+
+/* ================= Popup close btn CSS ==================  */
+.btn-default {
+    border: none;
+    border-radius: 10px;
+    padding: 0.3rem .5rem;
+    background-color: bisque;
+    font-family: 'League Gothic', sans-serif;
+}
+
+.btn-default:hover {
+    cursor: pointer;
+}
+/* ================ End Popup close btn CSS ================ */

@@ -1,0 +1,140 @@
+
+
+:root {
+
+    --padding-4: 1rem;
+    --padding-3: .5rem;
+    --padding-2: 1.5rem;
+    --padding-input: .275rem;
+    --padding-input-lg: .5rem;
+    --margin-4: .5rem;
+    --font-input: .875rem;
+    --border-radius-input: .1875rem;
+    --margin-2: 1.2rem;
+    --color-primary-variant: #111e88;
+    --box-shadow: 0 2rem 3rem  var(--color-light);
+    
+}
+
+login-form {
+    margin: var(--margin-2) auto;
+    width: 350px;
+}
+
+form .container {
+    padding: var(--padding-3);
+}
+
+input {
+    outline: none;
+    display: block;
+    border: 1px solid #ccc;
+    font-size: var(--font-input);
+    padding: var(--padding-input);
+    border-radius: var(--border-radius-input);
+}
+
+input[type="text"] {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.headings {
+    border-bottom: 1px solid #ccc;
+    padding-top: var(--padding-2);
+    padding-bottom: var(--padding-3);
+    margin-bottom: var(--margin-2);
+}
+
+.headings span {
+    margin-left: var(--margin-4);
+}
+
+.headings .close {
+    margin-right: var(--margin-4);
+    font-size: 10px;
+}
+
+.check input {
+    display: inline-block;
+}
+
+input[type="submit"] {
+    padding: var(--padding-3);
+    background-color: #fff;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--color-primary-variant);
+}
+
+
+@media screen and (min-width: 560px) {
+
+    .login-form {
+        width: 100%;
+    }
+
+    input[type="text"] {
+        margin-bottom: 1rem;
+    }
+
+    .login-form .container {
+        padding: 0 var(--padding-4);
+    }
+}
+
+/* ============ Popup ============= */
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    height: 100vh;
+    padding-top: 3rem;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: rgb(0, 0, 0, 0.5);
+    font-family: 'League Gothic', sans-serif;
+}
+
+.popup-inner {
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.popup-inner .close-btn {
+    position: absolute;
+    top: 10%;
+    right: 4%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.popup-inner .close-btn .fa-xmark {
+    font-size: 16px;
+}
+
+.popup-inner .close-btn:hover {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 560px) {
+    
+    .popup-inner {
+        width: 55%;
+        height: 50vh;
+    }
+
+    .popup-inner .close-btn {
+        top: 7%;
+        right: 3%;
+    }
+}

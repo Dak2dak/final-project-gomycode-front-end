@@ -1,14 +1,17 @@
 import React from 'react';
-import ScrollingText from './ScrollingText';
 
 
-const NavBar = () => {
+const NavBar = (props) => {
 
     return (
         <div>
             <header>
                 <div className="top">
-                    <ScrollingText />
+                    {/* <marquee behavior="slide" direction="right">
+                        THE BEST ONLINE SHOPPING WEBSITE OF IVORY COAST
+                    </marquee> */}
+
+                    {/* Gotta look for something else as this one is deprecated */}
                 </div>
                 <nav>
                     <div className="nav-left">
@@ -28,14 +31,17 @@ const NavBar = () => {
                         </div>
                     </div>
                     <div className="nav-right">
-                        <a href="" className="btn">
+                        <button href="" className="btn">
                             My cart
                             <i className="fa-solid fa-cart-arrow-down"></i>
-                        </a>
-                        <a href="" className="btn">
+                        </button>
+                        <button 
+                            className="btn" 
+                            onClick={() => props.handleClick}
+                        >
                             Login
                             <i className="fa-solid fa-user"></i>
-                        </a>
+                        </button>
                     </div>
                 </nav>
             </header>
